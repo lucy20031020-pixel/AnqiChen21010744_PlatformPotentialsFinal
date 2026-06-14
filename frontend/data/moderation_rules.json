@@ -1,0 +1,15 @@
+{
+  "policy_signals": {
+    "adult_or_sexual": ["sexual", "nudity", "body", "intimate", "onlyfans"],
+    "harassment_or_hate": ["harassment", "hate", "slur", "bullying", "abuse"],
+    "violence_or_safety": ["violence", "blood", "injury", "weapon", "self-harm"],
+    "misinformation": ["misinformation", "false", "medical", "election", "conspiracy"],
+    "regulated_goods": ["drug", "alcohol", "weapon", "counterfeit", "gambling"],
+    "political_or_civic": ["protest", "police", "strike", "government", "censorship", "black lives matter", "racial justice", "antiracism"],
+    "monetization_or_fundraising": ["donation", "fundraising", "ad revenue", "advertisements", "watch ads", "monetization", "demonetized"]
+  },
+  "context_restorers": ["education", "news", "documentation", "satire", "counterspeech", "personal testimony", "advocacy"],
+  "high_impact_outcomes": ["account strike", "account warning", "demonetized", "shadowbanned", "live banned"],
+  "appeal_evidence": ["original caption", "platform notice screenshot", "community guideline cited", "context statement", "audience and intent", "edited version if available"],
+  "default_privacy": "creator_private"
+}

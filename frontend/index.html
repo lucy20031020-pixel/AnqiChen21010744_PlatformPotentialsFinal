@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Why was my post removed?</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Independent moderation transparency layer</p>
+        <h1>Why was my post removed?</h1>
+      </div>
+      <nav aria-label="System layers">
+        <a href="#case-intake">Case</a>
+        <a href="#logic">Explanation</a>
+        <a href="#data">Data</a>
+        <a href="#governance">Appeal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">Inequality addressed</p>
+          <h2>Content removal is powerful, but the reasoning is often hidden.</h2>
+          <p>
+            This add-on helps creators understand why posts may have been removed, what policy area was likely applied,
+            what evidence strengthens an appeal, and how to document unfair or opaque moderation decisions.
+          </p>
+          <p>
+            Instead of only saying "community guidelines were violated", the system explains what part of the case was
+            flagged, whether the decision appears automated or needs human review, and what appeal routes are available.
+          </p>
+        </div>
+        <div class="principles" id="principles"></div>
+      </section>
+
+      <section class="workspace" id="case-intake">
+        <form class="panel form-panel" id="reportForm">
+          <div class="section-heading">
+            <p class="eyebrow">Creator-facing layer</p>
+            <h2>Start a removal case</h2>
+          </div>
+          <div class="privacy-notice">
+            <strong>Privacy by default</strong>
+            <p>
+              You do not need to use your real name. Keep locations approximate, such as "main street"
+              or "UAL building entrance". Avoid adding unnecessary personal information in the description.
+            </p>
+          </div>
+          <div class="privacy-notice">
+            <strong>Consent and retention</strong>
+            <p>
+              This add-on only stores information needed to explain the removal and prepare an appeal.
+              Unresolved cases are kept while review is active. Once a case is marked resolved,
+              personal or identifying information is deleted after 60 days.
+            </p>
+          </div>
+
+          <div class="split">
+            <label>
+              Platform
+              <select name="platform">
+                <option value="TikTok">TikTok</option>
+                <option value="Red Notes">Red Notes</option>
+                <option value="Instagram">Instagram</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Other platform">Other platform</option>
+              </select>
+            </label>
+            <label>
+              Content type
+              <select name="contentType">
+                <option value="video">Video</option>
+                <option value="image post">Image post</option>
+                <option value="text post">Text post</option>
+                <option value="livestream">Livestream</option>
+                <option value="comment">Comment</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Removed post title
+            <input name="postTitle" required placeholder="Short title of the removed post" />
+          </label>
+
+          <label>
+            Name or creator alias
+            <input name="creatorName" value="" placeholder="Optional." />
+          </label>
+
+          <label>
+            What did the platform say?
+            <textarea name="removalNotice" rows="3" placeholder="Paste or summarize the platform's removal notice"></textarea>
+          </label>
+
+          <label>
+            What was the post actually about?
+            <textarea name="contentSummary" rows="5" placeholder="Briefly explain the content, context, and intent of the post"></textarea>
+          </label>
+
+          <label>
+            Approximate location or context
+            <input name="contextLocation" placeholder="Approximate area only, e.g. campus entrance" />
+          </label>
+
+          <div class="split">
+            <label>
+              Creator context
+              <select name="creatorType">
+                <option value="independent creator">Independent creator</option>
+                <option value="small business">Small business</option>
+                <option value="activist">Activist</option>
+                <option value="educator">Educator</option>
+                <option value="journalist">Journalist</option>
+                <option value="marginalized creator">Marginalized creator</option>
+              </select>
+            </label>
+            <label>
+              Account impact
+              <select name="accountImpact">
+                <option value="post removed">Post removed</option>
+                <option value="account warning">Account warning</option>
+                <option value="demonetized">Demonetized</option>
+                <option value="shadowbanned">Visibility restricted</option>
+                <option value="live banned">Live banned</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Did the platform mention user reports?
+            <select name="userReportSignal">
+              <option value="unknown">Not clear / not mentioned</option>
+              <option value="yes">Yes, user reports were mentioned</option>
+              <option value="no">No, user reports were not mentioned</option>
+            </select>
+          </label>
+
+          <div class="split">
+            <label>
+              Appeal goal
+              <select name="appealGoal">
+                <option value="restore post">Restore post</option>
+                <option value="remove account strike">Remove account strike</option>
+                <option value="restore monetization">Restore monetization</option>
+                <option value="get a clearer explanation">Get a clearer explanation</option>
+              </select>
+            </label>
+            <label>
+              Language
+              <select name="language">
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="checks">
+            <label><input type="checkbox" name="anonymous" checked /> Submit this case anonymously</label>
+            <label><input type="checkbox" name="identityRisk" checked /> This case includes identity or safety risk</label>
+            <label><input type="checkbox" name="evidence" value="platform notice screenshot" checked /> I have the platform notice screenshot</label>
+            <label><input type="checkbox" name="evidence" value="original caption" /> I have the original caption</label>
+            <label><input type="checkbox" name="evidence" value="community guideline cited" /> The notice cited a specific guideline</label>
+            <label><input type="checkbox" name="consentGiven" required /> I consent to storing the minimum information needed to explain this removal and prepare an appeal</label>
+            <label><input type="checkbox" id="accessMode" /> Accessibility display mode</label>
+          </div>
+
+          <button type="submit">Explain removal and draft appeal</button>
+          <p class="status" id="apiStatus">Checking backend connection...</p>
+        </form>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">System output</p>
+            <h2>Removal cases and appeal drafts</h2>
+          </div>
+          <div id="reports" class="reports"></div>
+        </section>
+      </section>
+
+      <section class="grid-two" id="logic">
+        <section class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">Moderation and algorithmic behaviour</p>
+            <h2>Explanation rules</h2>
+          </div>
+          <div id="rules" class="rule-list"></div>
+        </section>
+
+        <section class="panel" id="data">
+          <div class="section-heading">
+            <p class="eyebrow">Data governance and privacy</p>
+            <h2>Data dictionary</h2>
+          </div>
+          <div id="dictionary" class="dictionary"></div>
+        </section>
+      </section>
+
+      <section class="panel" id="governance">
+        <div class="section-heading">
+          <p class="eyebrow">Governance and accountability</p>
+          <h2>Independent appeal log</h2>
+        </div>
+        <form id="appealForm" class="appeal-form appeal-form-wide">
+          <input name="reportId" type="number" placeholder="Case ID" />
+          <textarea name="writtenStatement" rows="3" placeholder="Written appeal: what is unfair, unclear, or incorrect?"></textarea>
+          <textarea name="backgroundContext" rows="3" placeholder="Background context: satire, political speech, cultural meaning, reclaiming language, education, documentation..."></textarea>
+          <input name="supportingMaterials" placeholder="Supporting materials, e.g. screenshots, original caption, policy link" />
+          <label class="inline-check"><input type="checkbox" name="requestHumanReview" checked /> Request human review</label>
+          <button type="submit">Log appeal</button>
+        </form>
+        <form id="resolveForm" class="appeal-form appeal-form-wide">
+          <input name="reportId" type="number" placeholder="Case ID" />
+          <select name="finalDecision">
+            <option value="overturned">Decision overturned</option>
+            <option value="upheld">Decision upheld</option>
+            <option value="partially_restored">Partially restored</option>
+            <option value="needs_more_information">Needs more information</option>
+          </select>
+          <input name="reason" placeholder="Final decision reason shown to the user" />
+          <button type="submit">Record final decision</button>
+        </form>
+        <div id="governanceLog" class="timeline"></div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="guidelinesModal" role="dialog" aria-modal="true" aria-labelledby="guidelinesTitle" hidden>
+      <section class="guidelines-modal">
+        <div class="section-heading">
+          <p class="eyebrow">Before you begin</p>
+          <h2 id="guidelinesTitle">Community Guidelines</h2>
+        </div>
+        <p>
+          Users are expected to participate in the platform in a way that does not cause harm to others.
+          The following types of content may be removed, restricted, labelled, or sent for human review.
+        </p>
+
+        <div class="guideline-list">
+          <article>
+            <h3>Hate Speech</h3>
+            <p>
+              Content that attacks, dehumanizes, or encourages discrimination against people based on identity
+              characteristics is not allowed. This includes content targeting race, ethnicity, nationality, religion,
+              gender, sexuality, disability, or other protected identities.
+            </p>
+            <p><strong>Possible action:</strong> removal, warning, account restriction, or human review.</p>
+          </article>
+
+          <article>
+            <h3>Harassment and Threats</h3>
+            <p>
+              Content that threatens, intimidates, repeatedly targets, humiliates, or encourages others to attack a
+              person or group is not allowed. This includes targeted abuse and coordinated harassment.
+            </p>
+            <p><strong>Possible action:</strong> removal, comment restriction, reporting limits, or escalation to human moderators.</p>
+          </article>
+
+          <article>
+            <h3>Misinformation and Disinformation</h3>
+            <p>
+              Content that spreads false or misleading information may be restricted or removed, especially when it
+              could cause real-world harm. This includes false information about health, public safety, emergencies,
+              or identity-based rumours.
+            </p>
+            <p><strong>Possible action:</strong> warning label, reduced visibility, fact-check notice, removal, or human review.</p>
+          </article>
+
+          <article>
+            <h3>Scams, Spam, and Impersonation</h3>
+            <p>
+              Fraudulent content, phishing links, fake giveaways, mass spam, or impersonating other people or
+              organizations is not allowed.
+            </p>
+            <p><strong>Possible action:</strong> content removal, link blocking, account restriction, or platform safety review.</p>
+          </article>
+
+          <article>
+            <h3>Graphic, Violent, or Exploitative Content</h3>
+            <p>
+              Graphic violence, sexual exploitation, or content that encourages self-harm or real-world violence may
+              be restricted or removed. Some sensitive content may remain visible if it has clear educational,
+              journalistic, artistic, or public-interest context.
+            </p>
+            <p><strong>Possible action:</strong> age restriction, content warning, blur filter, removal, or human review.</p>
+          </article>
+        </div>
+
+        <button type="button" id="acceptGuidelines">I understand</button>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

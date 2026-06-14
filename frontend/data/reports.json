@@ -1,0 +1,251 @@
+[
+  {
+    "id": 2019083101,
+    "platform": "YouTube",
+    "postTitle": "Removals of Syrian human rights content: August 2019",
+    "contentType": "video / human rights documentation",
+    "creatorName": "Syrian Archive",
+    "anonymous": false,
+    "contextLocation": "Syria conflict documentation context",
+    "contentSummary": "Example case based on a Syrian Archive article about removals of Syrian human rights content in August 2019. The content relates to preserving documentation of human rights violations and potential evidence for advocacy, justice, and accountability.",
+    "removalNotice": "Platform removal or restriction of conflict-related human rights documentation. Exact platform notice not available from the fetched page text.",
+    "policyCategory": "violence_or_safety",
+    "creatorType": "human rights archive",
+    "accountImpact": "post removed",
+    "userReportSignal": "unknown",
+    "appealGoal": "restore post",
+    "identityRisk": true,
+    "consentGiven": true,
+    "language": "English",
+    "status": "appeal_draft_ready",
+    "createdAt": "2026-06-13T14:00:00Z",
+    "resolvedAt": null,
+    "retentionState": "active_review",
+    "personalDataDeletionDue": null,
+    "flagged": true,
+    "explanationScore": 8,
+    "appealStrength": "strong",
+    "likelyPolicyMatch": "violence_or_safety",
+    "reviewPath": "human_review_recommended",
+    "moderationSource": {
+      "source": "unknown",
+      "confidence": "low",
+      "explanation": "The available page text does not clearly say whether the removal came from automation, user reports, or human review."
+    },
+    "flaggedContentParts": [
+      "content summary: human rights violations, conflict documentation (violence_or_safety)",
+      "content summary: advocacy, justice, accountability (political_or_civic)"
+    ],
+    "appealOptions": [
+      "request human review because the content has documentary and public-interest value",
+      "request a specific policy citation rather than a generic community guidelines notice",
+      "submit context explaining that the material documents human rights violations",
+      "ask for preservation of evidence where removal affects accountability work"
+    ],
+    "transparencyPanel": {
+      "whatHappened": "Human rights documentation related to Syria was reportedly removed or restricted, affecting preservation and accountability work.",
+      "triggeredRule": "violence_or_safety",
+      "decisionType": "Automated or unclear decision; human review is recommended because conflict documentation requires context.",
+      "moderationSource": {
+        "source": "unknown",
+        "confidence": "low",
+        "explanation": "The fetched article metadata does not identify whether the removal was algorithmic, user-reported, or manually reviewed."
+      },
+      "userReportsInvolved": "Unknown. The available page text did not clearly say whether user reports were involved.",
+      "evidenceUsed": [
+        "article title: removals of Syrian human rights content",
+        "source context: Syrian Archive preserves documentation of human rights violations for advocacy, justice, and accountability"
+      ],
+      "nextSteps": [
+        "request human review",
+        "provide public-interest and evidentiary context",
+        "ask the platform to preserve removed material for accountability purposes",
+        "request a specific rule citation and explanation"
+      ]
+    },
+    "appeals": [],
+    "finalDecision": null,
+    "finalDecisionReason": null,
+    "privacyWarnings": [
+      "Name or creator alias will be visible in this case record.",
+      "Location is contextual rather than a precise address."
+    ],
+    "moderationExplanation": "This case likely relates to violence or safety rules because conflict documentation may visually or textually involve violence. However, the public-interest and human rights documentation context strongly supports human review rather than automatic removal.",
+    "recommendedEvidence": [
+      "source article URL",
+      "platform removal notice screenshot",
+      "public-interest context statement",
+      "documentation or archival purpose statement"
+    ],
+    "appealDraft": "I am appealing this removal because the content appears to document human rights violations and may have public-interest, evidentiary, or accountability value. Please provide the specific policy rule applied, confirm whether the decision was automated, user-reported, or manually reviewed, and conduct a human review that considers documentation, newsworthiness, and preservation of evidence."
+  },
+  {
+    "id": 2017083001,
+    "platform": "YouTube",
+    "postTitle": "Vital Human Rights Evidence in Syria is Disappearing from YouTube",
+    "contentType": "video / human rights evidence archive",
+    "creatorName": "WITNESS / Syrian human rights documentation partners",
+    "anonymous": false,
+    "contextLocation": "Syria conflict documentation context",
+    "contentSummary": "Example case based on a WITNESS article reporting that Syrian human rights videos and channels were being removed from YouTube after Google introduced machine-learning detection for extremist material. The article describes conflict documentation, evidence preservation, and public-interest human rights reporting.",
+    "removalNotice": "YouTube removals related to violent extremism enforcement and machine-learning detection. The article cites YouTube language about better detection and faster removal driven by machine learning, including removals before a human flag.",
+    "policyCategory": "violence_or_safety",
+    "creatorType": "human rights documentation group",
+    "accountImpact": "channel removed",
+    "userReportSignal": "no",
+    "appealGoal": "restore post",
+    "identityRisk": true,
+    "consentGiven": true,
+    "language": "English",
+    "status": "appeal_draft_ready",
+    "createdAt": "2026-06-13T14:00:00Z",
+    "resolvedAt": null,
+    "retentionState": "active_review",
+    "personalDataDeletionDue": null,
+    "flagged": true,
+    "explanationScore": 10,
+    "appealStrength": "strong",
+    "likelyPolicyMatch": "violence_or_safety",
+    "reviewPath": "human_review_recommended",
+    "moderationSource": {
+      "source": "automated_system_likely",
+      "confidence": "medium",
+      "explanation": "The article reports machine-learning detection and cites YouTube statements about removals before receiving a human flag, so automation likely played a major role."
+    },
+    "flaggedContentParts": [
+      "content summary: human rights videos, conflict documentation, extremist material (violence_or_safety)",
+      "removal notice: machine-learning detection, violent extremism enforcement (violence_or_safety)",
+      "account impact: channel removed (high_impact_outcomes)"
+    ],
+    "appealOptions": [
+      "request immediate human review because the material has evidentiary and public-interest value",
+      "ask YouTube to distinguish extremist propaganda from human rights documentation and counter-extremism evidence",
+      "request restoration or private archival access where public restoration is delayed",
+      "ask for preservation of removed material for accountability, journalism, and legal processes"
+    ],
+    "transparencyPanel": {
+      "whatHappened": "Human rights videos and documentation channels related to Syria were reportedly removed from YouTube, including high-impact channel-level removals.",
+      "triggeredRule": "violence_or_safety / violent extremism enforcement",
+      "decisionType": "Likely automated or automation-triggered decision; human review is strongly recommended because the content has evidence, journalism, and accountability value.",
+      "moderationSource": {
+        "source": "automated_system_likely",
+        "confidence": "medium",
+        "explanation": "The article connects removals to machine-learning detection and notes that many removals occurred before a human flag."
+      },
+      "userReportsInvolved": "No user reports were indicated in the article context; the reported concern centers on machine-learning detection.",
+      "evidenceUsed": [
+        "article title: vital human rights evidence in Syria is disappearing from YouTube",
+        "reported platform mechanism: machine-learning detection of extremist material",
+        "reported impact: VDC channel with more than 32,000 conflict videos taken down",
+        "context: videos used for human rights reporting, advocacy, and accountability"
+      ],
+      "nextSteps": [
+        "request human review",
+        "submit evidence-preservation and public-interest context",
+        "ask for specific rule citation and machine-learning review details",
+        "request restoration of public access or at least secure archival access"
+      ]
+    },
+    "appeals": [],
+    "finalDecision": null,
+    "finalDecisionReason": null,
+    "privacyWarnings": [
+      "Name or organization will be visible in this case record.",
+      "Location is contextual rather than a precise address."
+    ],
+    "moderationExplanation": "This case likely triggered violent extremism or safety enforcement because Syrian conflict documentation can include graphic or extremist-related evidence. However, the WITNESS article frames the material as human rights evidence with public-interest and accountability value. Because the article connects removals to machine-learning detection, human review is especially important.",
+    "recommendedEvidence": [
+      "WITNESS article URL",
+      "YouTube removal notice or channel takedown screenshot",
+      "statement of human rights documentation purpose",
+      "evidence-preservation or legal accountability context",
+      "examples of prior journalistic or investigative use"
+    ],
+    "appealDraft": "I am appealing this removal because the content documents human rights violations and may serve as evidence for journalism, advocacy, justice, and accountability. The decision appears connected to automated violent-extremism enforcement, but the content should be reviewed in context as documentation rather than promotion of harm. Please provide the specific policy basis, confirm whether machine-learning detection triggered the decision, conduct human review, and restore the content or preserve secure access for accountability purposes."
+  },
+  {
+    "id": 2020070201,
+    "platform": "YouTube",
+    "postTitle": "Black Lives Matter-related videos removed from YouTube",
+    "contentType": "video / activism and fundraising content",
+    "creatorName": "Teen Vogue reported creators",
+    "anonymous": false,
+    "contextLocation": "United States racial justice protests context",
+    "contentSummary": "Example case based on a Teen Vogue article reporting that multiple creators had Black Lives Matter-related YouTube videos removed. Some videos encouraged viewers to watch ads so ad revenue could be donated to Black Lives Matter-affiliated organizations or racial justice causes.",
+    "removalNotice": "Removed for violating YouTube donation or fundraising policy. Creators reported that guidance was unclear, and some videos received warnings or appeal denials.",
+    "policyCategory": "monetization_or_fundraising",
+    "creatorType": "activist / independent creator",
+    "accountImpact": "account warning",
+    "userReportSignal": "unknown",
+    "appealGoal": "restore post",
+    "identityRisk": true,
+    "consentGiven": true,
+    "language": "English",
+    "status": "appeal_draft_ready",
+    "createdAt": "2026-06-13T14:00:00Z",
+    "resolvedAt": null,
+    "retentionState": "active_review",
+    "personalDataDeletionDue": null,
+    "flagged": true,
+    "explanationScore": 9,
+    "appealStrength": "strong",
+    "likelyPolicyMatch": "monetization_or_fundraising",
+    "reviewPath": "human_review_recommended",
+    "moderationSource": {
+      "source": "unknown",
+      "confidence": "low",
+      "explanation": "The article does not clearly establish whether removals were automated, user-reported, or manually reviewed; creators experienced takedowns, warnings, and appeal denial."
+    },
+    "flaggedContentParts": [
+      "content summary: Black Lives Matter, police brutality, racial justice (political_or_civic)",
+      "content summary: watch ads, donate ad revenue (monetization_or_fundraising)",
+      "removal notice: donation policy, fundraising policy (monetization_or_fundraising)",
+      "account impact: warning / strike risk (high_impact_outcomes)"
+    ],
+    "appealOptions": [
+      "request a specific policy citation explaining which donation rule was violated",
+      "ask for human review because the content involves racial justice, civic speech, and public-interest education",
+      "explain whether the video sought to mislead ad systems or simply redirect creator revenue to donations",
+      "request removal of account warning if the policy guidance was unclear at the time of posting"
+    ],
+    "transparencyPanel": {
+      "whatHappened": "YouTube creators reported that Black Lives Matter-related videos were removed, including videos tied to donating ad revenue or fundraising for racial justice causes.",
+      "triggeredRule": "monetization_or_fundraising / donation policy",
+      "decisionType": "Unclear decision source; human review is recommended because the case involves civic speech, fundraising policy, and uneven creator impact.",
+      "moderationSource": {
+        "source": "unknown",
+        "confidence": "low",
+        "explanation": "The article reports removals and appeal outcomes but does not clearly identify whether decisions were made by automation, user reports, or human reviewers."
+      },
+      "userReportsInvolved": "Unknown. The article does not indicate that user reports caused the removals.",
+      "evidenceUsed": [
+        "article title: Black Lives Matter-related videos are being taken off YouTube",
+        "reported rule: YouTube donation/fundraising policy",
+        "reported content: videos about Black Lives Matter, police brutality, antiracism education, and ad-revenue donations",
+        "reported impact: removals, warnings, appeal denial, and fear of strikes"
+      ],
+      "nextSteps": [
+        "request human review",
+        "ask for the exact fundraising policy citation",
+        "submit context about civic education and racial justice fundraising",
+        "ask for warning or strike removal where guidance was unclear"
+      ]
+    },
+    "appeals": [],
+    "finalDecision": null,
+    "finalDecisionReason": null,
+    "privacyWarnings": [
+      "Name or organization will be visible in this case record.",
+      "Location is contextual rather than a precise address."
+    ],
+    "moderationExplanation": "This case likely involves YouTube's donation or fundraising policy rather than a simple community-guidelines violation. The moderation harm is partly procedural: creators reported unclear rules, uneven enforcement, appeal denial, and fear of warnings or strikes for Black Lives Matter-related civic speech.",
+    "recommendedEvidence": [
+      "Teen Vogue article URL",
+      "YouTube removal notice screenshot",
+      "original title, description, and caption",
+      "evidence of the fundraising or donation wording used",
+      "timeline showing whether YouTube guidance was available before posting"
+    ],
+    "appealDraft": "I am appealing this removal because the video concerned Black Lives Matter, antiracism education, and racial justice fundraising. Please provide the exact fundraising or donation policy that was violated, explain whether this was an automated or manual decision, and review the video in context as civic speech. If the policy guidance was unclear when the video was posted, please restore the video and remove any warning or strike connected to the takedown."
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "platform": {
+    "purpose": "Identifies which social platform made the moderation decision.",
+    "access": "case_owner_and_advocate",
+    "risk": "May reveal where a creator is vulnerable to future enforcement."
+  },
+  "postTitle": {
+    "purpose": "Short user-facing label for the removed post.",
+    "access": "case_owner_and_advocate",
+    "risk": "May expose sensitive political, identity, or livelihood context."
+  },
+  "contentSummary": {
+    "purpose": "Describes the post without requiring the system to store the original media.",
+    "access": "case_owner_and_advocate",
+    "risk": "Could include sensitive speech or identity information."
+  },
+  "contextLocation": {
+    "purpose": "Optional approximate context for where the post or incident relates to, without requiring an exact address.",
+    "access": "case_owner_only_by_default",
+    "risk": "If too specific, it may reveal home address, routine location, workplace, or frequently visited places."
+  },
+  "creatorName": {
+    "purpose": "Optional name or creator alias supplied by the user.",
+    "access": "case_owner_only_by_default",
+    "risk": "Can expose a creator to retaliation, harassment, or platform scrutiny."
+  },
+  "anonymous": {
+    "purpose": "Controls whether the case is stored and displayed without the creator's name.",
+    "access": "system",
+    "risk": "If ignored, the system may reproduce the same exposure harms it is meant to challenge."
+  },
+  "removalNotice": {
+    "purpose": "Stores the exact or paraphrased notice received from the platform.",
+    "access": "case_owner_and_advocate",
+    "risk": "May include account status or enforcement details."
+  },
+  "creatorType": {
+    "purpose": "Helps evaluate unequal impact across creators, such as activists, educators, sex workers, journalists, or small businesses.",
+    "access": "aggregated_research_only",
+    "risk": "Should not be used to rank deservingness."
+  },
+  "accountImpact": {
+    "purpose": "Documents whether the removal affected income, visibility, account standing, or posting ability.",
+    "access": "case_owner_and_advocate",
+    "risk": "May reveal financial vulnerability."
+  },
+  "identityRisk": {
+    "purpose": "Signals whether the case includes sensitive identity or safety risks.",
+    "access": "system_private",
+    "risk": "Must be protected because it can expose marginalized users."
+  },
+  "consentGiven": {
+    "purpose": "Records that the creator agreed to minimum necessary storage before submitting the case.",
+    "access": "system",
+    "risk": "Consent must be specific and cannot justify collecting unnecessary data."
+  },
+  "status": {
+    "purpose": "Shows whether the case is still under review or has been resolved.",
+    "access": "case_owner_and_advocate",
+    "risk": "Resolved cases should not keep personal data indefinitely."
+  },
+  "retentionState": {
+    "purpose": "Shows whether a case is in active review, waiting for deletion after resolution, or has had personal data deleted.",
+    "access": "case_owner_and_system",
+    "risk": "If not enforced, retention labels can become empty compliance theatre."
+  },
+  "resolvedAt": {
+    "purpose": "Starts the 60-day deletion countdown for personal or identifying information.",
+    "access": "system",
+    "risk": "If missing, resolved cases may be retained longer than necessary."
+  },
+  "personalDataDeletionDue": {
+    "purpose": "Documents the date when personal or identifying data must be deleted after resolution.",
+    "access": "case_owner_and_system",
+    "risk": "The date must be enforced, not only displayed."
+  },
+  "likelyPolicyMatch": {
+    "purpose": "Explains which policy area the system thinks the platform relied on.",
+    "access": "case_owner",
+    "risk": "Should be framed as an estimate, not a final judgment."
+  },
+  "reviewPath": {
+    "purpose": "Shows whether the case appears to need automated explanation, human review, or a clearer platform explanation.",
+    "access": "case_owner",
+    "risk": "Must not pretend to know the platform's internal process with certainty."
+  },
+  "moderationSource": {
+    "purpose": "Estimates whether the moderation decision appears to come from automation, user reports, human review, or an unclear source.",
+    "access": "case_owner",
+    "risk": "This is an inference from the notice and user-provided information, not confirmed platform-internal knowledge."
+  },
+  "flaggedContentParts": {
+    "purpose": "Lists which parts of the user's case matched policy signals, such as title, summary, notice, or account impact.",
+    "access": "case_owner",
+    "risk": "Should be used for explanation, not to blame the user."
+  },
+  "appealOptions": {
+    "purpose": "Shows practical routes the user can take to challenge or clarify the moderation decision.",
+    "access": "case_owner",
+    "risk": "Options should not imply guaranteed success."
+  },
+  "transparencyPanel": {
+    "purpose": "Provides a structured explanation of what happened, which rule was triggered, the decision type, user report involvement, evidence used, and next steps.",
+    "access": "case_owner",
+    "risk": "Should avoid vague language and should not overclaim certainty about platform-internal systems."
+  },
+  "appeals": {
+    "purpose": "Stores user-submitted appeal statements, context, supporting materials, and human review requests.",
+    "access": "case_owner_and_reviewer",
+    "risk": "Appeal text may contain sensitive context and must be protected."
+  },
+  "finalDecision": {
+    "purpose": "Records the outcome after review, such as overturned, upheld, partially restored, or needs more information.",
+    "access": "case_owner_and_reviewer",
+    "risk": "A final decision without reasons can reproduce opaque moderation."
+  },
+  "finalDecisionReason": {
+    "purpose": "Explains the reason for the final decision after appeal review.",
+    "access": "case_owner_and_reviewer",
+    "risk": "Should be specific enough to be useful without exposing unnecessary private information."
+  },
+  "appealDraft": {
+    "purpose": "Provides a structured appeal that the user can adapt.",
+    "access": "case_owner",
+    "risk": "May reproduce sensitive information if the user adds too much detail."
+  }
+}
